@@ -1,0 +1,24 @@
+configurations { providedCompile }
+
+dependencies {
+    
+}
+
+sourceSets {
+    main {
+        compileClasspath += configurations.providedCompile
+    }
+    test {
+        compileClasspath += configurations.providedCompile
+        runtimeClasspath += configurations.providedCompile
+    }
+}
+
+if (!hasProperty('mainClass')) {
+    ext.mainClass = 'org.dy.fw.app.HisApplication'
+}
+
+dependencies {
+    providedCompile files("${System.env['JAVA_HOME']}/jre/lib/ext/jfxrt.jar")
+    compile project(':app-fw')
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    
+    <bean id="ROOT_MODEL" class="org.dy.fw.root.uf.RootModel">
+        <property name="beanId" value="ROOT"></property>
+        <property name="fxmlPath" value="/org/dy/app/uf/root/root.fxml"></property>
+        <property name="fxmlController">
+            <bean id="ROOT_CONTROLLER" class="org.dy.fw.root.uf.RootController"></bean>
+        </property>
+    </bean>
+    
+    <bean id="ROOT_HELLOWOLD_CF" class="org.dy.fw.root.cf.RootCommand">
+        <property name="beanId" value="ROOT_HELLOWOLD_CF"></property>
+        <property name="key" value="CUSTOM_PROPERTY_VALUE"></property>
+    </bean>
+    
+</beans>

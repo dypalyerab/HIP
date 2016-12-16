@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <import resource="classpath:config/framework.xml"/>
+    <import resource="classpath:config/uf/registry.xml"/>
+    <import resource="classpath:config/uf/clinic.xml"/>
+    <import resource="classpath:config/uf/econ.xml"/>
+    <import resource="classpath:config/uf/patad.xml"/>
+    <import resource="classpath:config/uf/pham.xml"/>
+    <import resource="classpath:config/cf/registry.xml"/>
+    <import resource="classpath:config/cf/clinic.xml"/>
+    <import resource="classpath:config/cf/econ.xml"/>
+    <import resource="classpath:config/cf/patad.xml"/>
+    <import resource="classpath:config/cf/pham.xml"/>
+    <import resource="classpath:config/sf/registry.xml"/>
+    <import resource="classpath:config/sf/clinic.xml"/>
+    <import resource="classpath:config/sf/econ.xml"/>
+    <import resource="classpath:config/sf/patad.xml"/>
+    <import resource="classpath:config/sf/pham.xml"/>
+    
+</beans>
